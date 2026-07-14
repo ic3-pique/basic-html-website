@@ -1,6 +1,7 @@
 body {
   max-width: 1300px;
   margin: auto;
+  font-size: 16px;
   /* background-color: red; */
 }
 
@@ -11,17 +12,45 @@ header {
   justify-content: space-between;
 }
 
+section > header {
+  height: 20px;
+  /* background-color: red; */
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
   list-style-type: none;
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+a:hover {
+  text-decoration: underline solid;
 }
 
+main.hero-headers {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  line-height: 0.9;
+  font: 700;
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
 section aside {
   display: flex;
   border: 2px solid black;
@@ -77,4 +106,8 @@ footer {
 
 .box {
   padding: 10px;
+}
+
+strong {
+  font-size: 20px;
 }
